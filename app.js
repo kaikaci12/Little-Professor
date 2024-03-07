@@ -36,7 +36,17 @@ function askingQuestion() {
     if (userAnswer === sum) {
       correctAnswers++;
     } else {
-      for (let i = 0; i < 2; i++) {}
+      for (let i = 0; i < 2; i++) {
+        if (userAnswer === sum) {
+          correctAnswers++;
+          continue;
+        }
+        alert("EEE");
+        userAnswer = parseInt(prompt(`${x} + ${y} = `));
+      }
     }
   }
+  return `CorrectAnswers: ${correctAnswers}`;
 }
+
+console.log(askingQuestion());
