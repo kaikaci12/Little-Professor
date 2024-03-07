@@ -35,6 +35,8 @@ function askingQuestion() {
     let userAnswer = parseInt(prompt(`${x} + ${y} = `));
     if (userAnswer === sum) {
       correctAnswers++;
+    } else {
+      for (let i = 0; i < 2; i++) {}
     }
   }
 }
