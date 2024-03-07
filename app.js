@@ -6,3 +6,8 @@ function chooseLevel(level) {
 }
 
 const levelPrompt = chooseLevel(prompt("Level: "));
+
+function generateRandomNumber(level) {
+  let x;
+  let y;
+}
