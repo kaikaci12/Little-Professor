@@ -30,4 +30,9 @@ function generateRandomNumber(level) {
 
 function askingQuestion() {
   let correctAnswers = 0;
+  for (let i = 0; i < 10; i++) {
+    const { x, y, sum } = generateRandomNumber(levelPrompt);
+    let userAnswer = parseInt(prompt(`${x} + ${y} = `));
+  }
 }
+// console.log(askingQuestion());
