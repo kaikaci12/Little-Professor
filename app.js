@@ -27,3 +27,7 @@ function generateRandomNumber(level) {
     sum: x + y,
   };
 }
+
+function askingQuestion() {
+  let correctAnswers = 0;
+}
