@@ -20,4 +20,10 @@ function generateRandomNumber(level) {
     x = Math.floor(Math.random() * 1000);
     y = Math.floor(Math.random() * 1000);
   }
+
+  return {
+    x: x,
+    y: y,
+    sum: x + y,
+  };
 }
