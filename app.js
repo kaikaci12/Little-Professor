@@ -33,6 +33,8 @@ function askingQuestion() {
   for (let i = 0; i < 10; i++) {
     const { x, y, sum } = generateRandomNumber(levelPrompt);
     let userAnswer = parseInt(prompt(`${x} + ${y} = `));
+    if (userAnswer === sum) {
+      correctAnswers++;
+    }
   }
 }
-// console.log(askingQuestion());
